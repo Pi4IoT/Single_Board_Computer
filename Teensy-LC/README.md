@@ -1,3 +1,6 @@
+<h2>Raspberry & Arduino via Bluetooth - SHT75 Data - Node-RED</h2>
+</br>
+
 A video series on YouTube of how to use the Raspberry with Bluetooth to read out the sensor data. I use an Arduino compatible microcontroller. Arduino has the advantage the power consumption is much less than the power consumption from Raspberry Pi. In the following videos I will explain how to install the IDE and all Arduino libraries. Explain the program and how to install the Bluetooth on Pi so that you have access to the Arduino from Pi etc.
 
 
