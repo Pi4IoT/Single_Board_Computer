@@ -1,8 +1,19 @@
-<h3>ASUS Tinker Board</h3>
+<h1>ASUS Tinker Board</h1>
 </br>
 
-GPIO Test on ASUS Tinker Board.
+<h4>GPIO Test on ASUS Tinker Board.</h4>
+
 </br>
+quad-core 1.8GHz ARM Cortex-A17 CPU</br>
+2GB dual-channel LPDDR3 memory</br>
+Gigabit LAN and Bluetooth 4.0 + EDR</br>
+802.11 b/g/n Wi-Fi</br>
+Four USB 2.0 ports</br>
+40-pin header with 28 GPIO pins</br>
+3.5mm audio jack connection</br>
+HDMI 2.0 port with 4K-resolution support</br>
+MicroSD port supporting UHS-I card speed </br>
+</br></br>
 
 At the moment I have made this video some links doesn't show to the news OS and it doesn't work. Use the link:</br> https://www.asus.com/uk/Single-Board-Computer/Tinker-Board/</br>
 Or download it from:</br>
