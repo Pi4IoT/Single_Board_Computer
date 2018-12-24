@@ -4,15 +4,16 @@
 GPIO Test on ASUS Tinker Board.
 </br>
 
-At the moment I have made this video some links doesn't show to the news OS and it doesn't work. Use the link:</br> https://www.asus.com/Single-Board-Com... </br>
-Or download it from:https://www.asus.com/support/Download... 
+At the moment I have made this video some links doesn't show to the news OS and it doesn't work. Use the link:</br> https://www.asus.com/uk/Single-Board-Computer/Tinker-Board/</br>
+Or download it from:</br>
+https://www.asus.com/ch-de/Single-Board-Computer/Tinker-Board/
 </br>
 </br>
 This links shows to an old OS or the description are not correct: 
 </br>
-https://www.asus.com/uk/Single-Board-...</br> 
-https://www.asus.com/ch-de/Single-Boa... </br>
-https://www.asus.com/us/Single-Board-... </br>
+https://www.asus.com/uk/Single-Board-Computer/Tinker-Board/</br> 
+https://www.asus.com/ch-de/Single-Board-Computer/Tinker-Board/</br>
+https://www.asus.com/us/Single-Board-Computer/Tinker-Board/</br>
 In this video I use: </br>
 TinkerOS_Debian V1.8 (Beta version) </br>
 TinkerOS default username is “linaro”, password is “linaro”
