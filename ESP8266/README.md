@@ -36,7 +36,8 @@ The expamle program: –> htt_server.py - set_led_http.py
 Start with MQTT</br>
 1. Install the Mosquitto MQTT Broker on Raspberry Pi</br>
 2. Install MQTT Dashboard APP on your smartphone</br>
-3. Write a MicroPython program for the ESP8266 as subscriber
+3. Write a MicroPython program for the ESP8266 as subscriber</br>
+The expamle program: –> mqtt_ok.py
 </br></br>
 
 <a href="https://youtu.be/jyptg5rToMA" target="_blank">ESP8266 Part #8 – MQTT & Node-RED & MicroPython</a></br>
@@ -44,13 +45,7 @@ Start with MQTT</br>
 1. Use Raspberry Pi as MQTT Broker and Node-RED for subscribe and publishing</br>
 2. Use also the LED on the ESP8266 as subscriber and the button as publisher</br>
 3. And last but not least use the smartphone also as subscriber and publisher</br>
-
-</br></br>
-
-
-
-    Download the firmware: –> http://micropython.org/download</br>
-    Instead of using PuTTY you can use the Integrated Development Environment (IDE) ESPlorer. –>https://esp8266.ru/esplorer/</br>
+The expamle program: –> mqtt_publish.py
 </br></br>
 
 
