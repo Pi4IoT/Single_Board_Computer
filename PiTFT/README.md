@@ -4,7 +4,7 @@
 
 This is an easy example in Python, how you can use the PiTFT with the buttons.
 </br>
-<p>See the Python Program Example -> "test_1.py"</p>
+<b>See the Python Program Example -> "test_1.py"</b>
 
 
 Pi Image from: </br>
