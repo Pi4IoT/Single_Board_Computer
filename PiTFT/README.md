@@ -1,10 +1,10 @@
 
-<h1>Aluminum Case with LCD Screen2 -  PiTFT + Button</h1>
+<h1>Aluminum Case with LCD Screen -  PiTFT + Button</h1>
 </br>
 
 This is an easy example in Python, how you can use the PiTFT with the buttons.
-
 </br>
+<p>See the Python Program Example -> "test_1.py"</p>
 
 
 Pi Image from: </br>
