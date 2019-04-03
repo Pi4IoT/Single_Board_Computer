@@ -17,4 +17,4 @@ Video on YouTube --> <a href="https://youtu.be/RM2sC1GFHVA" target="_blank">
 </a>
 </br>
 
-<img src="https://user-images.githubusercontent.com/36192933/50406661-14c84180-07c9-11e9-8685-73550dbbd438.png" width="350">
+<img src="https://user-images.githubusercontent.com/36192933/55508676-a3671d00-565a-11e9-9c91-847e163795f5.png" width="350">
