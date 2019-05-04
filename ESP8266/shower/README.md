@@ -16,7 +16,7 @@ Create you one image for the e-paper display:
 Download this program from:</br>
 https://www.waveshare.com/wiki/File:Image2Lcd.7z
 
-Libraries for Arduino:</br>
+Library for Arduino to store it in the folder -> C:\Users\xxxx\Documents\Arduino\libraries:</br>
 https://github.com/ZinggJM/GxEPD
 </br>
 </br>
