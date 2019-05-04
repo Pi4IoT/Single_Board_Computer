@@ -21,6 +21,8 @@ https://github.com/ZinggJM/GxEPD
 </br>
 </br>
 set preferences for the ESP board:</br>
-http://arduino.esp8266.com/stable/package_esp8266com_index.json
+
 </br>
 <img src="https://user-images.githubusercontent.com/36192933/57177255-cad02600-6e62-11e9-9eb9-2575f9a6398c.png" width="350">
+</br>
+http://arduino.esp8266.com/stable/package_esp8266com_index.json
