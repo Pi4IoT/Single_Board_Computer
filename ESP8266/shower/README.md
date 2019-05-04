@@ -1,10 +1,9 @@
 <h1>Water Consumption Meter with ESP8266</h1>
 
-
-
-https://youtu.be/KQR2d_u7knQ
-
-
+Video on YouTube --> <a href="https://youtu.be/KQR2d_u7knQ" target="_blank">
+ <img src="https://user-images.githubusercontent.com/36192933/50377674-d0e70800-0621-11e9-9848-b41b02b2e1ac.png" alt="IMAGE ALT TEXT HERE" width="60" border="10" />
+</a>
+</br>
 
 
 <img src="https://user-images.githubusercontent.com/36192933/57177256-cdcb1680-6e62-11e9-8a13-db00b81c8379.png" width="350">
