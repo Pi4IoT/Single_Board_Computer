@@ -3,7 +3,7 @@
 <img src="https://user-images.githubusercontent.com/36192933/57177256-cdcb1680-6e62-11e9-8a13-db00b81c8379.png" width="350">
 
 
-* The following part is implemented in the C doe:
+* The following part is implemented in the C code:
 * Interrupt when a high is on GPIO pin 5
 * Deep Sleep mode
 * wake up function
