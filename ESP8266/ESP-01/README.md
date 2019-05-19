@@ -6,6 +6,9 @@ Video on YouTube --> <a href="https://youtu.be/n9nS4gmm7eU" target="_blank">
 </a>
 </br>
 
+<a href="https://youtu.be/n9nS4gmm7eU" target="_blank"><img src="https://user-images.githubusercontent.com/36192933/57981045-035f2a80-7a33-11e9-9940-22850fbb1cdf.png" width="350"></a>
+</br>
+
 <h4>Control Commands</h4>
 
 Each led stripe can set individual or group or all together.</br>
@@ -17,5 +20,8 @@ For example all led together:</br>
 Example only led1 from the group 1full brightness and red:</br></br>
 	command ->  „Gruppe01/LED01“ „255, 0, 0,“</br>
 </br>
+<img src="https://user-images.githubusercontent.com/36192933/57981052-0c4ffc00-7a33-11e9-9db0-cd64a9ce38ed.jpg" width="350">
+</br>
 <b>To using batteries for the ESP with WS2812 led I build a special voltage converter board.</b>
+</br>
 <img src="https://user-images.githubusercontent.com/36192933/57981069-34d7f600-7a33-11e9-8be5-8278ddde3283.png" width="350">
