@@ -10,9 +10,9 @@
 #include <PubSubClient.h>
 
 //your Info for the WLAN Router.....
-const char* SSID = "Your SSID";
-const char* PSK = "Your Password";
-const char* MQTT_BROKER = "Your IP Number ";
+const char* SSID = "Your SSID";        //WLAN Router
+const char* PSK = "Your Password";     //WLAN Router
+const char* MQTT_BROKER = "Your IP Number ";  //Raspberry Pi
 
 WiFiClient espClient;
 PubSubClient client(espClient);
