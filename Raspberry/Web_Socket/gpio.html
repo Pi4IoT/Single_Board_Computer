@@ -1,0 +1,77 @@
+<html>
+ <head>
+  <title>Raspberry & WebSocket</title>
+  <meta charset="utf-8" />
+  <script src="jquery-1.11.0.min.js"></script>
+  <meta name="viewport" content="width=device-width, 
+                                  initial-scale=1.3, 
+                                  maximum-scale=2.0, 
+                                  user-scalable=yes">
+  <style type="text/css">
+	<!--
+	 #led1_on, #led1_on_bild { display: none;}
+	 #t1_on { display: none;}
+	-->
+  </style>
+  <script>
+	var ws = new WebSocket("ws://192.168.0.102:8888/mycode");	
+	ws.onopen = function(evt) { 
+		$("#log").text("Opening the WebSocket...");	
+	}    
+	ws.onmessage = function(evt) {
+		$("#log").text(evt.data);
+		var n = evt.data.search("=");
+		LEDs = parseInt((evt.data).substring(n+2));
+		if(((evt.data).substring(0, n-1))== "LED"){
+			if(!LEDs){
+				$("#led1_on").hide();	$("#led1_on_bild").hide();
+				$("#led1_off").show();	$("#led1_off_bild").show();	
+			}
+			else{
+				$("#led1_on").show(); 	$("#led1_on_bild").show();
+				$("#led1_off").hide(); 	$("#led1_off_bild").hide();
+			}	
+		}	
+    }       
+	ws.onclose = function(evt) {
+        $("#log").text("Connection was closed...");
+    }
+        
+	function test(y) {
+		ws.send(y);
+	}  
+  </script>
+ </head>
+ 
+ <body>
+   <h3>Raspberry & WebSocket <i><br><small><small>(Python & Tornado)</small></small></i></h3>
+	<p><img id ="led1_on_bild" src="ON.jpg" width="92" height="146"/></p>
+	<p><button id ="led1_on" style="color: #aaa" onclick="test('led off');">LED 1 is &nbsp ON</button></p>
+   
+   	<p><img id ="led1_off_bild"src="OFF.jpg" width="92" height="146"/></p>
+    <p><button id ="led1_off" style="color: #aaa" onclick="test('led on');">LED 1 is OFF</button></p>
+
+ <b>Message:</b>   
+   <div id="log" style="overflow: auto;position: absolute ;overflow-x: hidden; 
+           width:350px; height:30px; background-color: #c2c7af">...</div>
+ <br><br>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
