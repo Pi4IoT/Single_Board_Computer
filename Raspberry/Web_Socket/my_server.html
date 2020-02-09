@@ -1,0 +1,136 @@
+<html>
+ <head>
+  <title>Raspberry & WebSocket</title>
+  <meta charset="utf-8" />
+  <script src="jquery-1.11.0.min.js"></script>
+  <style type="text/css">
+	<!--
+	 #led1_on, #led1_on_bild { display: none;}
+	 #led2_on, #led2_on_bild { display: none;}
+	 #led3_on, #led3_on_bild { display: none;}
+	 #led4_on, #led4_on_bild { display: none;}
+	 #t1_on, #t2_on { display: none;}
+	-->
+  </style>
+  <script>
+	var ws = new WebSocket("ws://10.0.0.18:8888/mycode");	
+	ws.onopen = function(evt) { 
+		$("#log").text("Opening the WebSocket...");	
+	}    
+	ws.onmessage = function(evt) {
+		$("#log").text(evt.data);
+		var n = evt.data.search("=");	
+		LEDs = parseInt((evt.data).substring(n+2, n+6));
+
+		if(LEDs & 0x01){
+			$("#led1_on").hide();	$("#led1_on_bild").hide();
+			$("#led1_off").show();	$("#led1_off_bild").show();	
+		}
+		else{
+			$("#led1_on").show(); 	$("#led1_on_bild").show();
+			$("#led1_off").hide(); 	$("#led1_off_bild").hide();
+		}
+		
+		if(LEDs & 0x02){
+			$("#led2_on").hide();	$("#led2_on_bild").hide();
+			$("#led2_off").show();	$("#led2_off_bild").show();	
+		}
+		else{
+			$("#led2_on").show(); 	$("#led2_on_bild").show();
+			$("#led2_off").hide(); 	$("#led2_off_bild").hide();
+		}
+		
+		if(LEDs & 0x04){
+			$("#led3_on").hide();	$("#led3_on_bild").hide();
+			$("#led3_off").show();	$("#led3_off_bild").show();	
+		}
+		else{
+			$("#led3_on").show(); 	$("#led3_on_bild").show();
+			$("#led3_off").hide(); 	$("#led3_off_bild").hide();
+		}
+
+		if(LEDs & 0x08){
+			$("#led4_on").hide();	$("#led4_on_bild").hide();
+			$("#led4_off").show();	$("#led4_off_bild").show();	
+		}
+		else{
+			$("#led4_on").show(); 	$("#led4_on_bild").show();
+			$("#led4_off").hide(); 	$("#led4_off_bild").hide();
+		}
+		
+		if(LEDs & 0x80){
+			$("#t1_on").hide();	$("#t1_off").show();
+		}
+		else{
+			$("#t1_on").show(); $("#t1_off").hide(); 
+		}		
+		if(LEDs & 0x40){
+			$("#t2_on").hide();$("#t2_off").show();	
+		}
+		else{
+			$("#t2_on").show(); $("#t2_off").hide();
+		}
+    }       
+	ws.onclose = function(evt) {
+        $("#log").text("Connection was closed...");
+    }
+        
+	function test(y) {
+		ws.send(y);
+	}  
+  </script>
+ </head>
+ 
+ <body>
+   <h3>Raspberry & WebSocket <i><small><small>(Python & Tornado)</small></small></i></h3>
+
+   <button id ="led1_on" style="color: #aaa" onclick="test('LED1 off');">LED 1 is &nbsp ON</button>
+   <img id ="led1_on_bild" src="LED_ON.jpg" width="30" height="15"/>
+   <button id ="led1_off" style="color: #aaa" onclick="test('LED1 on');">LED 1 is OFF</button>
+   <img id ="led1_off_bild"src="LED_OFF.jpg" width="30" height="15"/><br>
+
+   <button id ="led2_on" style="color: #aaa" onclick="test('LED2 off');">LED 2 is &nbsp ON</button>
+   <img id ="led2_on_bild" src="LED_ON.jpg" width="30" height="15"/>
+   <button id ="led2_off" style="color: #aaa" onclick="test('LED2 on');">LED 2 is OFF</button>
+   <img id ="led2_off_bild"src="LED_OFF.jpg" width="30" height="15"/><br>
+
+   <button id ="led3_on" style="color: #aaa" onclick="test('LED3 off');">LED 3 is &nbsp ON</button>
+   <img id ="led3_on_bild" src="LED_ON.jpg" width="30" height="15"/>
+   <button id ="led3_off" style="color: #aaa" onclick="test('LED3 on');">LED 3 is OFF</button>
+   <img id ="led3_off_bild"src="LED_OFF.jpg" width="30" height="15"/><br>
+
+   <button id ="led4_on" style="color: #aaa" onclick="test('LED4 off');">LED 4 is &nbsp ON</button>
+   <img id ="led4_on_bild" src="LED_ON.jpg" width="30" height="15"/>
+   <button id ="led4_off" style="color: #aaa" onclick="test('LED4 on');">LED 4 is OFF</button>
+   <img id ="led4_off_bild"src="LED_OFF.jpg" width="30" height="15"/><br><br>
+
+ <b>Taster -> </b>
+   <img id ="t1_on" src="Taster_ON.jpg" width="30" height="30"/>
+   <img id ="t1_off" src="Taster_OFF.jpg" width="30" height="30"/>
+   <img id ="t2_on" src="Taster_ON.jpg" width="30" height="30"/>
+   <img id ="t2_off" src="Taster_OFF.jpg" width="30" height="30"/><br>
+
+ <b>Message:</b>   
+   <div id="log" style="overflow: auto;position: absolute ;overflow-x: hidden; 
+           width:350px; height:30px; background-color: #c2c7af">...</div>
+ <br><br>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
